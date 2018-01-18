@@ -57,8 +57,8 @@ app.get("/search/:term", function (req, res) {
             a.thumbnail = a.image.thumbnailLink
             a.context = a.image.contextLink
             delete a.image
-            res.send(results)
           })
+          res.send(results)
         }
       });
     });
